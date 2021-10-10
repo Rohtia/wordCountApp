@@ -1,30 +1,40 @@
 const textArea = document.getElementById("textArea");
+
 var characterCount= document.getElementById("textArea");
+var calculate = document.getElementById("calculate");
+var characterCount = textArea;
 var wordCount;
 var characters;
 var words;
 var l;
 var enterKeys;
 var w = 0;
+var newLine = 0;
+var addWords = [];
 
-textArea.addEventListener("input", count);
 
-function count () {
+calculate.addEventListener("click", count2);
+
+
+// }
+count2 ();
+function count2 () {
 	const text = textArea.value;
-  //console.log(text);
+  console.log(text);
 
-  characterCount = text.split(""); //turn text area into an array, count the array elements for number of characters
+	characterCount = text.split(""); //turn text area into an array, count the array elements for number of characters
   characters = countCharacters(characterCount);
   document.getElementById("cCount").innerHTML = characters; //prints number of characters to page.
 
   wordCount = text.split(" "); //turn text area into an array, count array elements for number of words
-  console.log(wordCount);
+
  	words = countWords(wordCount);
-  //words = words + enterKeys; //word count based on number of spaces plus number of linebreaks
- /* console.log(words);
-  console.log(enterKeys); */
+console.log(wordCount);
+	//words = words + enterKeys; //word count based on number of spaces plus number of linebreaks
+  console.log(words);
+  console.log(enterKeys);
   document.getElementById("wCount").innerHTML = words;
-}
+}//close count2
 
 function countCharacters (count) {
 	l = count.length; //running count of characters

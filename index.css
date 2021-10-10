@@ -22,3 +22,10 @@ textarea {
     height: 60%;
     width: 80%;
 }
+
+#calculate {
+  background-color: #b9902f;
+  color: #292929;
+  font-size: 20px;
+  font-family: 'courgette', cursive;
+}
