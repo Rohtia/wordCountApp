@@ -5,12 +5,13 @@ html, body {
 
 body {
     font-size: 50px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'courgette', cursive;
+    color: white;
+     background-image: linear-gradient(to top, #5550c6, #605acc, #6b64d3, #766ed9, #8078df, #897de0, #9281e0, #9a86e1, #a187dc, #a788d8, #ad89d3, #b18acf);
 }
 
 .container {
     height: 100vh;
-    background-color: gold;
     display: flex;
     flex-direction: column;
     justify-content: center;
